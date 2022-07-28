@@ -1,0 +1,81 @@
+C01 git:(master) ✗ git init
+Initialized empty Git repository in /mnt/nfs/homes/abeaulat/42/C01/.git/
+➜  C01 git:(master) ✗ git remote add origin git@vogsphere.42paris.fr:vogsphere/intra-uuid-a42c0acb-ccf0-460f-bf50-77fda1a39e9c-4274705-abeaulat
+➜  C01 git:(master) ✗ git remote -v
+origin	git@vogsphere.42paris.fr:vogsphere/intra-uuid-a42c0acb-ccf0-460f-bf50-77fda1a39e9c-4274705-abeaulat (fetch)
+origin	git@vogsphere.42paris.fr:vogsphere/intra-uuid-a42c0acb-ccf0-460f-bf50-77fda1a39e9c-4274705-abeaulat (push)
+➜  C01 git:(master) ✗ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	ex00/
+	ex01/
+	ex02/
+	ex03/
+	ex04/
+	ex05/
+	ex06/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  C01 git:(master) ✗ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+➜  C01 git:(master) ✗ git add .
+➜  C01 git:(master) ✗ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   ex00/ft_ft.c
+	new file:   ex01/ft_ultimate_ft.c
+	new file:   ex02/ft_swap.c
+	new file:   ex03/ft_div_mod.c
+	new file:   ex04/ft_ultimate_div_mod.c
+	new file:   ex05/ft_putstr.c
+	new file:   ex06/ft_strlen.c
+
+➜  C01 git:(master) ✗ git commit -m mypool  
+[master (root-commit) f01d688] mypool
+ Committer: Astrid BEAULATON <abeaulat@e2r4p23.clusters.42paris.fr>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 147 insertions(+)
+ create mode 100644 ex00/ft_ft.c
+ create mode 100644 ex01/ft_ultimate_ft.c
+ create mode 100644 ex02/ft_swap.c
+ create mode 100644 ex03/ft_div_mod.c
+ create mode 100644 ex04/ft_ultimate_div_mod.c
+ create mode 100644 ex05/ft_putstr.c
+ create mode 100644 ex06/ft_strlen.c
+➜  C01 git:(master) git push -u origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (16/16), 1.66 KiB | 568.00 KiB/s, done.
+Total 16 (delta 6), reused 0 (delta 0)
+remote: . Processing 1 references
+remote: Processed 1 references in total
+To vogsphere.42paris.fr:vogsphere/intra-uuid-a42c0acb-ccf0-460f-bf50-77fda1a39e9c-4274705-abeaulat
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+➜  C01 git:(master) git log
+➜  C01 git:(master) git push 
+Everything up-to-date
+➜  C01 git:(master) 
+
+
